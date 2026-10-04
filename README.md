@@ -34,6 +34,7 @@ Viewers type `!request <ID>` in the chat and the level is automatically added to
 
 ## 📋 Requirements
 
+- **Git** (to clone the repository) → [download here](https://git-scm.com)
 - **Node.js** v18 or higher → [download here](https://nodejs.org)
 - An active **TikTok** account currently live streaming
 
@@ -175,6 +176,7 @@ Los espectadores escriben `!request <ID>` en el chat y el nivel se añade autom�
 
 ## 📋 Requisitos
 
+- **Git** (para clonar el repositorio) → [descargar aquí](https://git-scm.com)
 - **Node.js** v18 o superior → [descargar aquí](https://nodejs.org)
 - Una cuenta de **TikTok** activa y en transmisión en vivo
 
