@@ -1,0 +1,19 @@
+{
+  "name": "gd-queue-tool",
+  "version": "1.0.0",
+  "description": "Geometry Dash level request queue tool for TikTok Live streams",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "node-fetch": "^3.3.2",
+    "tiktok-live-connector": "^1.1.9"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
