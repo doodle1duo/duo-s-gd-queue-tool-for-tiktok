@@ -62,33 +62,21 @@ npm install
 
 ---
 
-## ⚙️ Configuration
-
-1. Copy the example file and rename it:
-
-```bash
-copy .env.example .env
-```
-
-2. Open the `.env` file and replace the username:
-
-```env
-TIKTOK_USERNAME=your_tiktok_username
-```
-
-> ⚠️ **Important:** Do not include the `@` symbol. Just the username.
-
-[🔝 Back to top](#-gd-queue-tool-for-tiktok-live)
-
----
-
 ## ▶️ How to Start
 
 ```bash
 npm start
 ```
 
-The tool will connect to your live stream chat and start listening for requests.
+On the **first run**, the tool will ask you for your TikTok username directly in the terminal:
+
+```
+  👤 Enter your TikTok username (without @): your_username
+```
+
+The username is saved automatically. You won't be asked again on future runs.
+
+> To change the username later, use the `!setname <username>` command in the terminal.
 
 [🔝 Back to top](#-gd-queue-tool-for-tiktok-live)
 
@@ -215,33 +203,21 @@ npm install
 
 ---
 
-## ⚙️ Configuración
-
-1. Copia el archivo de ejemplo y renómbralo:
-
-```bash
-copy .env.example .env
-```
-
-2. Abre el archivo `.env` y reemplaza el nombre de usuario:
-
-```env
-TIKTOK_USERNAME=tu_usuario_de_tiktok
-```
-
-> ⚠️ **Importante:** No incluyas el símbolo `@`. Solo el nombre de usuario.
-
-[🔝 Volver arriba](#-gd-queue-tool-for-tiktok-live)
-
----
-
 ## ▶️ Cómo iniciar
 
 ```bash
 npm start
 ```
 
-La herramienta se conectará al chat de tu transmisión en vivo y comenzará a escuchar peticiones.
+En la **primera ejecución**, el programa te pedirá tu usuario de TikTok directamente en la terminal:
+
+```
+  👤 Ingresa tu usuario de TikTok (sin @): tu_usuario
+```
+
+El nombre se guarda automáticamente. En las próximas ejecuciones no te lo vuelve a preguntar.
+
+> Para cambiar el usuario más adelante, usa el comando `!setname <usuario>` desde la terminal.
 
 [🔝 Volver arriba](#-gd-queue-tool-for-tiktok-live)
 
