@@ -44,8 +44,8 @@ Viewers type `!request <ID>` in the chat and the level is automatically added to
 ## 📥 Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/doodle1duo/duo-s-gd-queue-tool-for-tiktok.git
+cd duo-s-gd-queue-tool-for-tiktok
 ```
 
 [🔝 Back to top](#-gd-queue-tool-for-tiktok-live)
@@ -197,8 +197,8 @@ Los espectadores escriben `!request <ID>` en el chat y el nivel se añade autom�
 ## 📥 Clonar el Repositorio
 
 ```bash
-git clone https://github.com/tu-usuario/nombre-del-repo.git
-cd nombre-del-repo
+git clone https://github.com/doodle1duo/duo-s-gd-queue-tool-for-tiktok.git
+cd duo-s-gd-queue-tool-for-tiktok
 ```
 
 [🔝 Volver arriba](#-gd-queue-tool-for-tiktok-live)
