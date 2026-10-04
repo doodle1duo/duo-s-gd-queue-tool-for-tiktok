@@ -41,13 +41,20 @@ Viewers type `!request <ID>` in the chat and the level is automatically added to
 
 ---
 
+## 📥 Clone the Repository
+
+```bash
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+```
+
+[🔝 Back to top](#-gd-queue-tool-for-tiktok-live)
+
+---
+
 ## 🚀 Installation
 
 ```bash
-# 1. Enter the project directory
-cd "Duo's_GD_queue_tool_for_tiktok"
-
-# 2. Install dependencies
 npm install
 ```
 
@@ -187,13 +194,20 @@ Los espectadores escriben `!request <ID>` en el chat y el nivel se añade autom�
 
 ---
 
+## 📥 Clonar el Repositorio
+
+```bash
+git clone https://github.com/tu-usuario/nombre-del-repo.git
+cd nombre-del-repo
+```
+
+[🔝 Volver arriba](#-gd-queue-tool-for-tiktok-live)
+
+---
+
 ## 🚀 Instalación
 
 ```bash
-# 1. Entra al directorio del proyecto
-cd "Duo's_GD_queue_tool_for_tiktok"
-
-# 2. Instala las dependencias
 npm install
 ```
 
