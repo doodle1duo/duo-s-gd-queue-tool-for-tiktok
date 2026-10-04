@@ -17,6 +17,7 @@ import {
   closeQueue,
   isOpen,
 } from './queue.js';
+import { getTiktokUsername, setTiktokUsername } from './config.js';
 
 // ---------------------------------------------------------------------------
 // Display helpers
@@ -96,6 +97,7 @@ function printHelp() {
   cmd('!open',             'Abre la cola a nuevas peticiones');
   cmd('!close',            'Cierra la cola a nuevas peticiones');
   cmd('!clear',            'Limpia toda la cola (pide confirmación)');
+  cmd('!setname <usuario>', 'Cambia el usuario de TikTok conectado');
   cmd('!help',             'Muestra esta ayuda');
   sep();
   console.log('');
@@ -224,6 +226,26 @@ async function handleCommand(input, rl) {
       } else {
         console.log(chalk.gray('\n  [COLA] Cancelado.\n'));
       }
+      break;
+    }
+
+    // --- !setname <usuario> ---
+    case '!setname': {
+      const newName = args[0];
+      if (!newName) {
+        console.log(chalk.red('\n  [ERROR] Uso: !setname <usuario>\n'));
+        break;
+      }
+      const cleaned = newName.replace(/^@/, '');
+      const old = getTiktokUsername();
+      setTiktokUsername(cleaned);
+      console.log(
+        chalk.magenta(`\n  [CONFIG] ✅ Usuario cambiado: `) +
+        chalk.gray(`@${old ?? '(ninguno)'}`) +
+        chalk.magenta(` → `) +
+        chalk.bold.white(`@${cleaned}`) +
+        chalk.yellow('\n           Reinicia el programa para conectar con el nuevo usuario.\n')
+      );
       break;
     }
 

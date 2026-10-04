@@ -8,6 +8,7 @@ import { WebcastPushConnection } from 'tiktok-live-connector';
 import chalk from 'chalk';
 import { getLevelInfo } from './gdapi.js';
 import { addRequest, isOpen } from './queue.js';
+import { getTiktokUsername } from './config.js';
 
 // Regex: matches "!request <levelID>" where levelID is 6–10 digits
 const REQUEST_REGEX = /^!request\s+(\d{6,10})\s*$/i;
@@ -98,12 +99,12 @@ async function handleChatMessage(username, comment) {
  * Reads TIKTOK_USERNAME from environment (loaded via dotenv in index.js).
  */
 export async function startTikTokListener() {
-  const username = process.env.TIKTOK_USERNAME;
+  const username = getTiktokUsername();
 
-  if (!username || username === 'your_tiktok_username') {
+  if (!username) {
     console.log(
-      chalk.red.bold('\n[TIKTOK] ⚠ TIKTOK_USERNAME no configurado en el archivo .env') +
-      chalk.yellow('\n         Crea un archivo .env basado en .env.example y reinicia.\n')
+      chalk.red.bold('\n[TIKTOK] ⚠ No hay usuario de TikTok configurado.') +
+      chalk.yellow('\n         Usa !setname <usuario> para configurarlo y reinicia.\n')
     );
     return;
   }
